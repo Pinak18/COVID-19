@@ -17,4 +17,5 @@ dash-core-components==1.13.0
 dash-html-components==1.1.1    
 dash-renderer==1.8.3    
 dash-table==4.11.0       
-datetime==4.3      
+datetime==4.3   
+requests==2.22.0 
