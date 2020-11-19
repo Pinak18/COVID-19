@@ -259,6 +259,6 @@ app.layout = generate_layout()
 def update_output_div(input_value1):
     return fig_world_trend(input_value1),generate_cards(input_value1)
      
-app.run_server(host='127.0.0.1',port=8050,debug=True)
+app.run_server(debug=True)
 
 
