@@ -95,6 +95,7 @@ def world_map():
 external_stylesheets = [dbc.themes.BOOTSTRAP]
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 app.title = 'COVID-19 Data Visuals'
 
 colors = {
@@ -260,6 +261,6 @@ def update_output_div(input_value1):
     return fig_world_trend(input_value1),generate_cards(input_value1)
   
 if __name__ == '__main__':
-  app.run_server(debug=True)
+  app.server.run(debug=True)
 
 
